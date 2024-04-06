@@ -16,6 +16,7 @@ const Projects = () => {
             description={project.deiscription}
             gitLink={project.gitLink}
             tech={project.tech}
+            invert={project.invert_img}
           />
         ))}
       </div>

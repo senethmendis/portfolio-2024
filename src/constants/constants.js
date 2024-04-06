@@ -53,6 +53,7 @@ const socialIcons = [
 
 const projectList = [
   {
+    invert_img: false,
     name: "Blog App",
     icon: flutter,
     tech: ["Dart", "Flutter", "Firebase"],
@@ -61,6 +62,7 @@ const projectList = [
     gitLink: "https://github.com/wolfy-six/blog_app.git",
   },
   {
+    invert_img: false,
     name: "Space X App",
     icon: flutter,
     tech: ["Dart", "Flutter", "API", "Postman API"],
@@ -69,6 +71,7 @@ const projectList = [
     gitLink: "https://github.com/wolfy-six/SpaceX-Modile-App.git",
   },
   {
+    invert_img: false,
     name: "T-Shirt-Customizer",
     icon: reactlogo,
     tech: ["React", "ThreeJs", "threeFiber", "gsap"],
@@ -77,12 +80,55 @@ const projectList = [
     gitLink: "https://github.com/wolfy-six/T-Shirt-Customizer.git",
   },
   {
+    invert_img: false,
     name: "Bank Website",
     icon: reactlogo,
     tech: ["React", "Tailwind"],
     deiscription:
       "Experience seamless banking with our React-powered website, elegantly designed with Tailwind CSS. Manage your finances with ease, explore services, and access resources securely with our intuitive interface.",
     gitLink: "https://github.com/wolfy-six/Bank-webapp.git",
+  },
+  {
+    invert_img: false,
+    name: "NFT Web Design",
+    icon: reactlogo,
+    tech: ["React", "Tailwind", "Threejs"],
+    deiscription:
+      "React-based NFT site, powered by Three.js. Immerse yourself in stunning 3D visuals as you explore unique and rare digital assets.",
+    gitLink: "https://github.com/wolfy-six/CyberBand-web-site.git",
+  },
+  {
+    invert_img: true,
+    name: "Portfolio 2023",
+    icon: nextjslogo,
+    tech: ["React", "Tailwind", "Threejs"],
+    deiscription: "My previous portfolio for 2023",
+    gitLink: "https://github.com/wolfy-six/SenethMendis-Portfolio.git",
+  },
+  {
+    invert_img: true,
+    name: "Movie-Lab-website",
+    icon: nextjslogo,
+    tech: ["React", "Tailwind", "Threejs"],
+    deiscription:
+      "Movie viewing site built on Next.js and the TMDB API, styled with Tailwind CSS. Discover the latest releases, browse through popular titles.",
+    gitLink: "https://github.com/wolfy-six/Movie-Lab-website.git",
+  },
+  {
+    invert_img: true,
+    name: "NextJs Portfolio Test",
+    icon: nextjslogo,
+    tech: ["React", "Tailwind"],
+    deiscription: "NextJs Portfolio Beta",
+    gitLink: "https://github.com/wolfy-six/nextjs-portfolio.git",
+  },
+  {
+    invert_img: false,
+    name: "Drum Kit",
+    icon: jslogo,
+    tech: ["javascript", "html", "css"],
+    deiscription: "Fun Drum kit can play with key stroks",
+    gitLink: "https://github.com/wolfy-six/DrumKit.git",
   },
 ];
 
