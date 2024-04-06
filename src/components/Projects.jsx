@@ -5,7 +5,9 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <section id="Project">
-      <h1 className="md:text-5xl my-10 lg:px-10">Projects Completed So Far</h1>
+      <h1 className="md:text-5xl my-10 lg:px-10 text-center py-3">
+        Project's <br /> completed so far
+      </h1>
 
       <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 px-4 md:px-6 lg:px-10">
         {projectList.map((project) => (
