@@ -67,3 +67,7 @@ section {
 .invert-img {
   filter: invert(1);
 }
+
+.custom-tech-logo {
+  @apply w-[60px] h-[60px] z-50 absolute;
+}

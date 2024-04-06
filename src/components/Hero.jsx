@@ -1,35 +1,61 @@
 import { useGSAP } from "@gsap/react";
 import { curcle, mySelfNostyle } from "../assets";
+import { ScrollTrigger } from "gsap/all";
 import { socialIcons } from "../constants/constants";
 import gsap from "gsap/gsap-core";
-
+gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   useGSAP(() => {
-    gsap.to("#social-icons", {
-      scale: 1.1,
-      repeat: -1,
-      duration: 2,
-      yoyo: true,
-      stagger: {
-        amount: 1.5,
-        grid: [2, 1],
-        axis: "y",
-        ease: "circ.inout",
+    gsap.fromTo(
+      "#social-icons",
+      {
+        x: 200,
+        scale: 1.1,
+        repeat: -1,
+        yoyo: true,
+        stagger: {
+          amount: 1.5,
+          grid: [1, 1],
+          axis: "y",
+          ease: "circ.inout",
+        },
       },
-    });
+      {
+        x: 0,
+        scale: 1.1,
+        repeat: 0,
+        yoyo: false,
+        stagger: {
+          amount: 1.5,
+          grid: [2, 1],
+          axis: "y",
+          ease: "circ.inout",
+        },
+        scrollTrigger: {
+          trigger: "#social-icons",
+          start: "top center",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+
     gsap.to("#blue-round", {
       scale: 1.05,
       repeat: -1,
       yoyo: true,
       duration: 2,
       delay: 0.3,
+      scrollTrigger: {
+        trigger: "#blue-round",
+        start: "top top",
+      },
     });
   }, []);
 
   useGSAP(() => {
     gsap.fromTo(
       "#seneth-name",
-
       {
         opacity: 0,
         y: 20,
@@ -38,19 +64,31 @@ const Hero = () => {
         opacity: 1,
         y: 0,
         delay: 0.5,
+        scrollTrigger: {
+          trigger: "#seneth-name",
+          start: "top 60%",
+          end: "bottom ",
+          toggleActions: "restart pause resume reset",
+          scrub: true,
+        },
       }
     );
     gsap.fromTo(
       "#my-img",
 
       {
-        opacity: 0,
-        y: 20,
+        y: 250,
       },
       {
-        opacity: 1,
         y: 0,
-        delay: 0.7,
+
+        scrollTrigger: {
+          trigger: "#seneth-name",
+          start: "top 60%",
+          end: "bottom ",
+          toggleActions: "restart pause resume reset",
+          scrub: true,
+        },
       }
     );
   }, []);
@@ -80,8 +118,8 @@ const Hero = () => {
       <div className="aqua__gradient absolute w-[30%] h-[30%] top-0 bottom-0 z-0" />
       <div className="pink__gradient absolute w-[30%] h-[30%] bottom-0 z-0" />
 
-      <div className="hidden md:absolute z-50 md:right-0 md:mr-16 md:mb-56">
-        <ul className="flex md:flex-col gap-10">
+      <div className="md:absolute z-50 md:right-0 md:mr-16 md:mb-56">
+        <ul className="hidden md:flex md:flex-col gap-10">
           {socialIcons.map((item) => (
             <li key={item.link} id="social-icons">
               <a href={item.link} target="_blank">
