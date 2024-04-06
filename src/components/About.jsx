@@ -3,18 +3,12 @@ import { sprayCan } from "../assets";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap/gsap-core";
-import {
-  firebaselogo,
-  nodelogo,
-  htmllogo,
-  csslogo,
-  reactlogo,
-} from "../assets/project-logos";
+import { express, nodelogo, reactlogo, mongo } from "../assets/project-logos";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  let FollowBox = "#Wrap .FollowBox";
+  let FollowBox = "#Wraper .FollowBox";
   gsap.set(FollowBox, {
     xPercent: -50,
     yPercent: -50,
@@ -79,7 +73,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "#spray-img",
           start: "top center",
-          end: "bottom ",
+          end: "bottom center",
           toggleActions: "restart pause resume reset",
           scrub: true,
         },
@@ -88,16 +82,22 @@ const About = () => {
   }, []);
 
   return (
-    <section className="flex flex-row relative">
+    <section id="About" className="flex flex-row relative">
       <div className="w-3/4text-white flex flex-col justify-center items-center gap-4">
+        <h1 className="text-6xl">About Me</h1>
         <div className="w-[80%] h-[80%] flex flex-col justify-center items-start">
-          <h1 id="about-text">SENETH MENDIS</h1>
+          <h1 id="about-text">
+            <span className="text-orange-600">Hi</span> I am SENETH MENDIS
+          </h1>
 
-          <strong id="about-text" className="text-6xl">
+          <strong
+            id="about-text"
+            className="text-3xl md:text-6xl text-orange-500"
+          >
             Software Engineer,
           </strong>
 
-          <p id="about-text" className="w-[60%] py-4 text-xl">
+          <p id="about-text" className="w-[60%] py-4 md:text-xl">
             To Secure a Challenging Positive in a reputable organization to
             expand my learning’s, knowledgeand and skills. Secure a responsible
             career opportunity to fully utilize my training and skills, while
@@ -105,7 +105,7 @@ const About = () => {
             <br />
           </p>
           <a href="https://www.linkedin.com/in/senethmendis/" target="_blank">
-            <strong>Read More</strong>
+            <strong className="text-orange-300">Read More</strong>
           </a>
         </div>
       </div>
@@ -123,35 +123,30 @@ const About = () => {
         className="aqua__gradient absolute w-[30%] h-[30%] top-0 -m-32 bottom-0 -z-10"
       />
       <div className="pink__gradient absolute w-[50%] h-[50%] z-0 bottom-0 right-0" />
-      <div id="Wrap" className="w-full h-ful absolute z-50">
+      <div id="Wraper" className="w-full h-ful absolute z-50">
+        <img
+          src={mongo}
+          alt=""
+          className=" FollowBox custom-tech-logo"
+          loading="lazy"
+        />
+        <img
+          src={express}
+          alt=""
+          className="FollowBox custom-tech-logo"
+          loading="lazy"
+        />
         <img
           src={reactlogo}
           alt=""
           className="FollowBox custom-tech-logo"
           loading="lazy"
         />
-        <img
-          src={htmllogo}
-          alt=""
-          className=" FollowBox custom-tech-logo"
-          loading="lazy"
-        />
+
         <img
           src={nodelogo}
           alt=""
           className="FollowBox custom-tech-logo"
-          loading="lazy"
-        />
-        <img
-          src={firebaselogo}
-          alt=""
-          className="FollowBox custom-tech-logo"
-          loading="lazy"
-        />
-        <img
-          src={csslogo}
-          alt=""
-          className="wFollowBox custom-tech-logo"
           loading="lazy"
         />
       </div>

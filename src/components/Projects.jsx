@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <section id="Project">
-      <h1 className="md:text-5xl my-10 lg:px-10 text-center py-3">
+      <h1 className="text-4xl md:text-5xl lg:text-7xl my-5 md:my-10 lg:px-10 lg:py-10 text-center py-3">
         Project's <br /> completed so far
       </h1>
 

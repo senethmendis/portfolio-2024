@@ -112,7 +112,7 @@ const Hero = () => {
         id="my-img"
         src={mySelfNostyle}
         alt="cucle"
-        className="w-[600px] md:w-[800px]  absolute md:bottom-0 z-10"
+        className="w-[800px] lg:w-[1000px]  absolute md:bottom-0 z-10"
       />
 
       <div className="aqua__gradient absolute w-[30%] h-[30%] top-0 bottom-0 z-0" />

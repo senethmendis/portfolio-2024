@@ -13,7 +13,7 @@ import {
 
 const navigationItems = [
   {
-    link: "#Home",
+    link: "#Home-top",
     linkName: "Home",
   },
   {

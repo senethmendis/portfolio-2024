@@ -38,7 +38,7 @@ body {
 }
 
 .custom-btn {
-  @apply bg-slate-900 border border-white/15 px-3 py-2 rounded-md hover:bg-slate-700;
+  @apply backdrop-blur-xl border border-white/20 px-3 py-2 rounded-md hover:bg-slate-950/30;
 }
 
 h1 {

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star orb
+* source:	https://sketchfab.com/3d-models/star-orb-6328e644bd8f46eabc3d7332febab31d
+* author:	tamminen (https://sketchfab.com/tamminen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star orb" (https://sketchfab.com/3d-models/star-orb-6328e644bd8f46eabc3d7332febab31d) by tamminen (https://sketchfab.com/tamminen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
