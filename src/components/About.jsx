@@ -51,7 +51,6 @@ const About = () => {
       {
         y: 0,
         opacity: 1,
-
         stagger: 0.1,
         scrollTrigger: {
           trigger: "#about-text",
@@ -69,6 +68,7 @@ const About = () => {
       },
       {
         x: 0,
+
         stagger: 0.1,
         scrollTrigger: {
           trigger: "#spray-img",
@@ -77,6 +77,7 @@ const About = () => {
           toggleActions: "restart pause resume reset",
           scrub: true,
         },
+        ease: "power1.inOut",
       }
     );
   }, []);
