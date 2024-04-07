@@ -1,10 +1,35 @@
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React from "react";
+import React, { useRef } from "react";
 import { Phone } from "../components";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_KEY,
+        "template_hfob2fl",
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_API_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section
       id="Contact"
@@ -21,21 +46,33 @@ const Contact = () => {
 
       <div className="w-full sm:w-1/2 h-auto flex justify-center items-center">
         <form
+          ref={form}
+          onSubmit={sendEmail}
           action=""
           className="flex justify-center items-center py-4 flex-col sm:w-full sm:h-full md:w-[60%] md:h-[60%] backdrop-blur-2xl  gap-4 border border-white/15 px-4 rounded-lg"
         >
-          <h1 className="pb-4 text-center">Send an Email to get in touch</h1>
+          <h1 className="pb-4 text-center">Send an Email to get in touch 👇</h1>
           <input
-            className="md:h-[50px] w-full lg:w-[400px] rounded-lg px-2"
+            className="md:h-[50px] w-full  rounded-lg px-2"
+            name="user_name"
             type="text"
-            placeholder="Madara uchiha"
+            placeholder="Enter  Name"
           />
           <input
-            className="w-full h-[50px] lg:w-[400px] rounded-lg px-2 "
+            className="w-full h-[50px]  rounded-lg px-2 "
             type="text"
+            name="user_email"
             placeholder="example@gmail.com"
           />
-          <button className="custom-btn w-full lg:w-[400px]" type="submit">
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="7"
+            placeholder="Message"
+            className="w-full rounded-lg p-2 text-black "
+          ></textarea>
+          <button className="custom-btn w-full" type="submit" value="Send">
             Send
           </button>
         </form>

@@ -29,7 +29,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="custom-btn">Contact Me</button>
+        <a className="custom-btn" href="#Contact">
+          Contact Me
+        </a>
       </nav>
 
       <ul
