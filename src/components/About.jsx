@@ -8,7 +8,7 @@ import { express, nodelogo, reactlogo, mongo } from "../assets/project-logos";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  let FollowBox = "#Wraper .FollowBox";
+  const FollowBox = "#Wraper .FollowBox";
   gsap.set(FollowBox, {
     xPercent: -50,
     yPercent: -50,
@@ -44,40 +44,22 @@ const About = () => {
     gsap.fromTo(
       "#about-text",
       {
-        y: 10,
-        opacity: 0,
+        y: 200,
         ease: "power1.inOut",
+        opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.1,
+        stagger: {
+          axis: "y",
+          each: 0.5,
+        },
         scrollTrigger: {
           trigger: "#about-text",
-          toggleActions: "restart pause resume reset",
-        },
-      }
-    );
-  }, []);
-
-  useGSAP(() => {
-    gsap.fromTo(
-      "#spray-img",
-      {
-        x: 500,
-      },
-      {
-        x: 0,
-
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: "#spray-img",
-          start: "top center",
-          end: "bottom center",
-          toggleActions: "restart pause resume reset",
+          start: "top bottom",
           scrub: true,
         },
-        ease: "power1.inOut",
       }
     );
   }, []);
@@ -105,7 +87,11 @@ const About = () => {
             making a significant contribution to the success of the company.
             <br />
           </p>
-          <a href="https://www.linkedin.com/in/senethmendis/" target="_blank">
+          <a
+            id="about-text"
+            href="https://www.linkedin.com/in/senethmendis/"
+            target="_blank"
+          >
             <strong className="text-orange-300">Read More</strong>
           </a>
         </div>
