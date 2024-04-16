@@ -101,12 +101,15 @@ const Hero = () => {
         alt="cucle"
         className="md:w-[500px] w-[300px] top-44 md:top-10 md:bottom-0 absolute z-10"
       />
-      <h1
-        id="seneth-name"
-        className="text-[100px] md:text-[250px] leading-9 top-60 absolute z-10"
-      >
-        SENETH
-      </h1>
+      {
+    //  <h1
+//id="seneth-name"
+      //  className="text-[100px] md:text-[250px] leading-9 top-60 absolute z-10"
+     // >
+       // SENETH
+     // </h1>
+
+      }
 
       <img
         id="my-img"
