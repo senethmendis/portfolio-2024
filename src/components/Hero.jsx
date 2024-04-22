@@ -53,27 +53,6 @@ const Hero = () => {
     });
   }, []);
 
-  useGSAP(() => {
-    gsap.fromTo(
-      "#seneth-name",
-      {
-        opacity: 0,
-        y: 20,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        delay: 0.5,
-        scrollTrigger: {
-          trigger: "#seneth-name",
-          start: "top 60%",
-          end: "bottom ",
-          toggleActions: "restart pause resume reset",
-          scrub: true,
-        },
-      }
-    );
-  }, []);
   return (
     <section className="flex flex-col justify-center items-center bg-cover object-cover">
       <img

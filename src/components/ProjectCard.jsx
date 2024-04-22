@@ -12,7 +12,7 @@ const ProjectCard = ({ icon, name, description, gitLink, tech, invert }) => {
             className={`${invert ? "invert-img" : "bg-contain rounded-full"}  `}
           />
         </div>
-        <h1 className="md:text-xl">{name}</h1>
+        <h1 className="md:text-xl capitalize">{name}</h1>
       </div>
       <p className="text-start">
         {description.slice(0, 145) + " . . ."}
