@@ -72,7 +72,11 @@ const Contact = () => {
             placeholder="Message"
             className="w-full rounded-lg p-2 text-black "
           ></textarea>
-          <button className="custom-btn w-full" type="submit" value="Send">
+          <button
+            className="custom-btn w-full send-btn"
+            type="submit"
+            value="Send"
+          >
             Send
           </button>
         </form>
