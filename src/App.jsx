@@ -2,7 +2,7 @@ import { About, Contact, Footer, Hero, Navbar, Projects } from "./components";
 
 function App() {
   return (
-    <main className="flex flex-col overflow-x-hidden">
+    <main className="">
       <Navbar />
       <Hero />
       <Projects />

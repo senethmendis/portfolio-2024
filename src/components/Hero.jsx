@@ -73,53 +73,34 @@ const Hero = () => {
         },
       }
     );
-    gsap.fromTo(
-      "#my-img",
-
-      {
-        y: 250,
-      },
-      {
-        y: 0,
-
-        scrollTrigger: {
-          trigger: "#seneth-name",
-          start: "top 60%",
-          end: "bottom ",
-          toggleActions: "restart pause resume reset",
-          scrub: true,
-        },
-      }
-    );
   }, []);
   return (
-    <section className=" flex justify-center items-center relative">
+    <section className="flex flex-col justify-center items-center bg-cover object-cover">
       <img
         id="blue-round"
         src={curcle}
         loading="lazy"
         alt="cucle"
-        className="md:w-[500px] w-[300px] top-44 md:top-10 md:bottom-0 absolute z-10"
+        className="md:w-[500px] w-[300px] top-32 md:top-16 lg:top-20  absolute -z-10"
       />
-      {
-    //  <h1
-//id="seneth-name"
-      //  className="text-[100px] md:text-[250px] leading-9 top-60 absolute z-10"
-     // >
-       // SENETH
-     // </h1>
-
-      }
-
       <img
         id="my-img"
         src={mySelfNostyle}
-        alt="cucle"
-        className="w-[800px] lg:w-[1000px]  absolute md:bottom-0 z-10"
+        alt="my self"
+        className="md:w-[800px] md:h-[800px] aspect-auto"
       />
 
-      <div className="aqua__gradient absolute w-[30%] h-[30%] top-0 bottom-0 z-0" />
-      <div className="pink__gradient absolute w-[30%] h-[30%] bottom-0 z-0" />
+      {
+        //  <h1
+        //id="seneth-name"
+        //  className="text-[100px] md:text-[250px] leading-9 top-60 absolute z-10"
+        // >
+        // SENETH
+        // </h1>
+      }
+
+      <div className="aqua__gradient absolute w-[30%] h-[30%] top-0 bottom-0 -z-20" />
+      <div className="pink__gradient absolute w-[30%] h-[30%] bottom-0 -z-20" />
 
       <div className="md:absolute z-50 md:right-0 md:mr-16 md:mb-56">
         <ul className="hidden md:flex md:flex-col gap-10">

@@ -8,6 +8,9 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
+:root {
+  overflow-x: hidden;
+}
 
 body {
   @apply bg-black text-white;
