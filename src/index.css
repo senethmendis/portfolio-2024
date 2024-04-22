@@ -41,7 +41,11 @@ body {
 }
 
 .custom-btn {
-  @apply backdrop-blur-xl border border-white/20 px-3 py-2 rounded-md hover:bg-slate-950/30;
+  @apply backdrop-blur-xl border border-white/20 px-3 py-2 rounded-md hover:bg-gradient-to-r from-violet-500 to-fuchsia-500;
+}
+
+.send-btn {
+  @apply bg-gradient-to-r from-violet-500 to-fuchsia-500;
 }
 
 h1 {
