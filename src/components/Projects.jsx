@@ -2,18 +2,16 @@ import { useState } from "react";
 import { projectList } from "../constants/constants";
 import ProjectCard from "./ProjectCard";
 import { BiSearchAlt } from "react-icons/bi";
-import { ScrollParallax } from "react-just-parallax";
 
 const Projects = () => {
   const [search, setSearch] = useState("");
 
   return (
     <section id="Project">
-      <ScrollParallax>
-        <h1 className="  text-4xl md:text-5xl lg:text-7xl my-5 md:my-10 lg:px-10 lg:py-10 text-center py-3">
-          Project&apos;s <br /> completed so far
-        </h1>
-      </ScrollParallax>
+      <h1 className="  text-4xl md:text-5xl lg:text-7xl my-5 md:my-10 lg:px-10 lg:py-10 text-center py-3">
+        Project&apos;s <br /> completed so far
+      </h1>
+
       <div className="w-full flex justify-center pb-10 ">
         <form
           action=""
