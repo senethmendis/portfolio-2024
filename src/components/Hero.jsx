@@ -6,6 +6,9 @@ import gsap from "gsap/gsap-core";
 import { useRef } from "react";
 import { MouseParallax } from "react-just-parallax";
 import { BackgroundCircles } from "./design/BackgroundCircles";
+import { BiMouse } from "react-icons/bi";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
@@ -63,6 +66,12 @@ const Hero = () => {
       className="flex flex-col justify-center items-center bg-cover object-cover mx-auto my-auto"
       ref={parallaxRef}
     >
+      <div className="flex flex-col justify-center items-center absolute z-50 bottom-10 animate-bounce text-black">
+        <IoIosArrowUp size={15} />
+        <BiMouse size={50} color="000" />
+        <IoIosArrowDown size={15} />
+      </div>
+
       <img
         id="blue-round"
         src={curcle}
@@ -81,15 +90,6 @@ const Hero = () => {
       <div className="absolute -z-50">
         <BackgroundCircles />
       </div>
-
-      {
-        //  <h1
-        //id="seneth-name"
-        //  className="text-[100px] md:text-[250px] leading-9 top-60 absolute z-10"
-        // >
-        // SENETH
-        // </h1>
-      }
 
       <div className="aqua__gradient absolute w-[30%] h-[30%] top-0 bottom-0 -z-20" />
       <div className="pink__gradient absolute w-[30%] h-[30%] bottom-0 -z-20" />

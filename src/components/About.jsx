@@ -9,42 +9,43 @@ import { ScrollParallax } from "react-just-parallax";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  gsap.set(".FollowBox", {
+    xPercent: -50,
+    yPercent: -50,
+    scale: 0,
+  });
+  gsap.set("#Wraper", {
+    xPercent: -50,
+    yPercent: -50,
+    scale: 0,
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    gsap.to("#Wraper .FollowBox", 0.5, {
+      x: e.clientX,
+      y: e.clientY,
+      stagger: 0.15,
+      ease: "none",
+    });
+
+    let TL = gsap.timeline({
+      defaults: { duration: 0.5, ease: "none" },
+    });
+    TL.to("#Wraper .FollowBox", {
+      scale: 1,
+      stagger: { amount: 0.15, from: "start", ease: "none" },
+    });
+    TL.to(
+      "#Wraper .FollowBox",
+      {
+        scale: 0,
+        stagger: { amount: 0.15, from: "end", ease: "none" },
+      },
+      "<+=2.5"
+    );
+  });
+
   useGSAP(() => {
-    gsap.set(".followBox", {
-      xPercent: -50,
-      yPercent: -50,
-      scale: 0,
-    });
-    gsap.set("#Wraper", {
-      xPercent: -50,
-      yPercent: -50,
-      scale: 0,
-    });
-    window.addEventListener("mousemove", (e) => {
-      gsap.to("#Wraper .followBox", 0.5, {
-        x: e.clientX,
-        y: e.clientY,
-        stagger: 0.15,
-        ease: "none",
-      });
-
-      let TL = gsap.timeline({
-        defaults: { duration: 0.5, ease: "none" },
-      });
-      TL.to("#Wraper .followBox", {
-        scale: 1,
-        stagger: { amount: 0.15, from: "start", ease: "none" },
-      });
-      TL.to(
-        "#Wraper .followBox",
-        {
-          scale: 0,
-          stagger: { amount: 0.15, from: "end", ease: "none" },
-        },
-        "<+=2.5"
-      );
-    });
-
     gsap.fromTo(
       "#about-text",
       {
@@ -118,26 +119,26 @@ const About = () => {
         <img
           src={mongo}
           alt=""
-          className=" followBox custom-tech-logo"
+          className=" FollowBox custom-tech-logo"
           loading="lazy"
         />
         <img
           src={express}
           alt=""
-          className="followBox custom-tech-logo"
+          className="FollowBox custom-tech-logo"
           loading="lazy"
         />
         <img
           src={reactlogo}
           alt=""
-          className="followBox custom-tech-logo"
+          className="FollowBox custom-tech-logo"
           loading="lazy"
         />
 
         <img
           src={nodelogo}
           alt=""
-          className="followBox custom-tech-logo"
+          className="FollowBox custom-tech-logo"
           loading="lazy"
         />
       </div>

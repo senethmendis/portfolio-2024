@@ -8,7 +8,7 @@ import { SkillList } from "../constants/constants";
 
 const Skills = () => {
   return (
-    <section>
+    <section id="Skill">
       <VerticalTimeline>
         {SkillList.map((lineItem) => (
           <VerticalTimelineElement

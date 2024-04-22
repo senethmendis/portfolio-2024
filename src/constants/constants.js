@@ -23,6 +23,10 @@ const navigationItems = [
     linkName: "Project",
   },
   {
+    link: "#Skill",
+    linkName: "Skills",
+  },
+  {
     link: "#About",
     linkName: "About",
   },
