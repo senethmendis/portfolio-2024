@@ -1,10 +1,12 @@
 import { fbLogo, instLogo, xLogo, linkedLogo } from "../assets";
 import {
   csslogo,
+  express,
   firebaselogo,
   flutter,
   htmllogo,
   jslogo,
+  mongo,
   nextjslogo,
   nodelogo,
   reactlogo,
@@ -132,4 +134,72 @@ const projectList = [
   },
 ];
 
-export { navigationItems, socialIcons, projectList };
+const SkillList = [
+  {
+    id: 4,
+    title: "Javascript",
+    date: "2021",
+    description:
+      "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
+    icon: jslogo,
+  },
+  {
+    id: 1,
+    title: "React.js",
+    date: "2023",
+    description:
+      "React is a JavaScript library for building user interfaces, known for its component-based architecture and efficient virtual DOM rendering.",
+    icon: reactlogo,
+  },
+  {
+    id: 5,
+    title: "Node.js",
+    date: "",
+    description:
+      "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
+    icon: nodelogo,
+  },
+  {
+    id: 6,
+    title: "Express.js",
+    date: "",
+    description:
+      "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
+    icon: express,
+  },
+  {
+    id: 7,
+    title: "MongoDB",
+    date: "",
+    description:
+      "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
+    icon: mongo,
+  },
+  {
+    id: 2,
+    title: "Next.js",
+    date: "",
+    description:
+      "Next.js is a framework for React that adds features like server-side rendering and routing, simplifying the process of building React applications.",
+    icon: nextjslogo,
+  },
+  {
+    id: 3,
+    title: "Flutter",
+    date: "",
+    description:
+      "Flutter is a UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It offers widgets for creating expressive and flexible user interfaces.",
+    icon: flutter,
+  },
+
+  {
+    id: 8,
+    title: "Tailwind CSS",
+    date: "",
+    description:
+      "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
+    icon: tailwindlogo,
+  },
+];
+
+export { navigationItems, socialIcons, projectList, SkillList };

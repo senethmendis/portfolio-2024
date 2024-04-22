@@ -82,7 +82,7 @@ const Contact = () => {
         </form>
       </div>
       <div className="w-full sm:w-1/2 h-auto flex justify-center items-center">
-        <h1 className="text-6xl md:text-[100px] lg:[150px] py-6">Contact Us</h1>
+        <h1 className="text-6xl md:text-[100px] lg:[150px] py-6">Contact Me</h1>
       </div>
 
       <div className="absolute -z-50 top-0 bottom-0 right-0 left-0">
