@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-  @apply text-2xl md:text-3xl font-medium;
+  @apply text-2xl md:text-3xl  font-medium;
 }
 
 section {
