@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap/gsap-core";
 import { express, nodelogo, reactlogo, mongo } from "../assets/project-logos";
+import { ScrollParallax } from "react-just-parallax";
 
 gsap.registerPlugin(ScrollTrigger);
 

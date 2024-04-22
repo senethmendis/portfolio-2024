@@ -3,8 +3,13 @@ import { curcle, mySelfNostyle } from "../assets";
 import { ScrollTrigger } from "gsap/all";
 import { socialIcons } from "../constants/constants";
 import gsap from "gsap/gsap-core";
+import { useRef } from "react";
+import { MouseParallax } from "react-just-parallax";
+import { BackgroundCircles } from "./design/BackgroundCircles";
+
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
+  const parallaxRef = useRef();
   useGSAP(() => {
     gsap.fromTo(
       "#social-icons",
@@ -54,7 +59,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center items-center bg-cover object-cover">
+    <section
+      className="flex flex-col justify-center items-center bg-cover object-cover mx-auto my-auto"
+      ref={parallaxRef}
+    >
       <img
         id="blue-round"
         src={curcle}
@@ -62,12 +70,17 @@ const Hero = () => {
         alt="cucle"
         className="md:w-[500px] w-[300px] top-32 md:top-16 lg:top-20  absolute -z-10"
       />
+
       <img
         id="my-img"
         src={mySelfNostyle}
         alt="my self"
         className="md:w-[800px] md:h-[800px] aspect-auto"
       />
+
+      <div className="absolute -z-50">
+        <BackgroundCircles />
+      </div>
 
       {
         //  <h1

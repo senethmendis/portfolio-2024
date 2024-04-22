@@ -21,7 +21,12 @@ const Skills = () => {
             icon={<AiFillGithub />}
           >
             <div className="flex gap-3">
-              <img src={lineItem.icon} alt="logo" className="w-8" />
+              <img
+                loading="lazy"
+                src={lineItem.icon}
+                alt="logo"
+                className="w-8"
+              />
               <h1 className="vertical-timeline-element-title text-xl font-semibold text-green-400">
                 {lineItem.title}
               </h1>

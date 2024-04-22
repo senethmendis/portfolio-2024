@@ -20,6 +20,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-just-parallax": "^3.1.16",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.163.0"
   },
