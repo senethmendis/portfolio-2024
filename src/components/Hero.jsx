@@ -66,11 +66,14 @@ const Hero = () => {
       className="flex flex-col justify-center items-center bg-cover object-cover mx-auto my-auto"
       ref={parallaxRef}
     >
-      <div className="flex flex-col justify-center items-center absolute z-50 bottom-10 animate-bounce text-black">
+      <a
+        href="#Project"
+        className="cursor-pointer flex flex-col justify-center items-center absolute z-50 bottom-10 animate-bounce text-black"
+      >
         <IoIosArrowUp size={15} />
         <BiMouse size={50} color="000" />
         <IoIosArrowDown size={15} />
-      </div>
+      </a>
 
       <img
         id="blue-round"

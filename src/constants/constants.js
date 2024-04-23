@@ -186,6 +186,7 @@ const SkillList = [
     description:
       "Next.js is a framework for React that adds features like server-side rendering and routing, simplifying the process of building React applications.",
     icon: nextjslogo,
+    invert_img: true,
   },
   {
     id: 3,
@@ -203,6 +204,14 @@ const SkillList = [
     description:
       "JavaScript is a versatile programming language primarily used for creating dynamic and interactive content on web pages. It enables developers to build everything from simple scripts to complex web applications with rich user interfaces.",
     icon: tailwindlogo,
+    invert_img: true,
+  },
+  {
+    id: 8,
+    title: "Firebase",
+    date: "",
+    description: "Cloub Storage for storing data.",
+    icon: firebaselogo,
   },
 ];
 

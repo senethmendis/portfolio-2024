@@ -67,8 +67,8 @@ section {
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  filter: blur(150px);
 }
 
 .invert-img {

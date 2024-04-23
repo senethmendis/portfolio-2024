@@ -15,9 +15,9 @@ const Navbar = () => {
               setNav(!nav);
             }}
           />
-          <h1 id="Home-top" className="uppercase">
-            Seneth
-          </h1>
+          <a href="/" id="Home-top">
+            <h1 className="uppercase">Seneth</h1>
+          </a>
         </div>
 
         <ul className="md:flex gap-8 hidden text-xl">

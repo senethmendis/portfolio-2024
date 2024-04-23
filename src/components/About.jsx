@@ -75,12 +75,13 @@ const About = () => {
         <h1 className="text-6xl">About Me</h1>
         <div className="w-[80%] h-[80%] flex flex-col justify-center items-start">
           <h1 id="about-text">
-            <span className="text-orange-600">Hi</span> I am SENETH MENDIS
+            <span className="text-orange-600">Hi</span> I am{" "}
+            <span className="hover:text-green-400">SENETH MENDIS</span>
           </h1>
 
           <strong
             id="about-text"
-            className="text-3xl md:text-6xl text-orange-500"
+            className="text-3xl md:text-6xl text-orange-500 hover:text-7xl transition-all duration-100"
           >
             Software Engineer,
           </strong>
