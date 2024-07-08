@@ -45,10 +45,12 @@ const socialIcons = [
     link: "https://www.facebook.com/seneth.mendis20/",
     icon: fbLogo,
   },
+
   {
     link: "https://www.instagram.com/mendis.exe?igsh=MWllYWlpOWg0Z2N4aQ%3D%3D&utm_source=qr",
     icon: instLogo,
   },
+
   {
     link: "https://twitter.com/itsSeniya",
     icon: xLogo,
@@ -61,7 +63,7 @@ const projectList = [
     name: "Blog App",
     icon: flutter,
     tech: ["Dart", "Flutter", "Firebase"],
-    description:
+    deiscription:
       "Flutter app powered by Firebase. Write, edit, and publish your posts on the go, while Firebase handles real-time updates and secure data storage.",
     gitLink: "https://github.com/wolfy-six/blog_app.git",
   },
@@ -70,7 +72,7 @@ const projectList = [
     name: "Space X App",
     icon: flutter,
     tech: ["Dart", "Flutter", "API", "Postman API"],
-    description:
+    deiscription:
       "Explore the latest launches, missions, and updates straight from SpaceX's rocket API. From rocket specifications to mission details, stay informed with real-time data.",
     gitLink: "https://github.com/wolfy-six/SpaceX-Modile-App.git",
   },
@@ -79,7 +81,7 @@ const projectList = [
     name: "T-Shirt-Customizer",
     icon: reactlogo,
     tech: ["React", "ThreeJs", "threeFiber", "gsap"],
-    description:
+    deiscription:
       "Using Three.js, React, and GSAP, design unique styles effortlessly. Enjoy smooth interactions and stunning animations while bringing your designs to life in 3D.",
     gitLink: "https://github.com/wolfy-six/T-Shirt-Customizer.git",
   },
@@ -88,7 +90,7 @@ const projectList = [
     name: "Bank Website",
     icon: reactlogo,
     tech: ["React", "Tailwind"],
-    description:
+    deiscription:
       "Experience seamless banking with our React-powered website, elegantly designed with Tailwind CSS. Manage your finances with ease, explore services, and access resources securely with our intuitive interface.",
     gitLink: "https://github.com/wolfy-six/Bank-webapp.git",
   },
@@ -97,7 +99,7 @@ const projectList = [
     name: "NFT Web Design",
     icon: reactlogo,
     tech: ["React", "Tailwind", "Threejs"],
-    description:
+    deiscription:
       "React-based NFT site, powered by Three.js. Immerse yourself in stunning 3D visuals as you explore unique and rare digital assets.",
     gitLink: "https://github.com/wolfy-six/CyberBand-web-site.git",
   },
@@ -106,7 +108,7 @@ const projectList = [
     name: "Portfolio 2023",
     icon: nextjslogo,
     tech: ["React", "Tailwind", "Threejs"],
-    description: "My previous portfolio for 2023",
+    deiscription: "My previous portfolio for 2023",
     gitLink: "https://github.com/wolfy-six/SenethMendis-Portfolio.git",
   },
   {
@@ -114,7 +116,7 @@ const projectList = [
     name: "Movie-Lab-website",
     icon: nextjslogo,
     tech: ["React", "Tailwind", "Threejs"],
-    description:
+    deiscription:
       "Movie viewing site built on Next.js and the TMDB API, styled with Tailwind CSS. Discover the latest releases, browse through popular titles.",
     gitLink: "https://github.com/wolfy-six/Movie-Lab-website.git",
   },
@@ -123,7 +125,7 @@ const projectList = [
     name: "NextJs Portfolio Test",
     icon: nextjslogo,
     tech: ["React", "Tailwind"],
-    description: "NextJs Portfolio Beta",
+    deiscription: "NextJs Portfolio Beta",
     gitLink: "https://github.com/wolfy-six/nextjs-portfolio.git",
   },
   {
@@ -131,7 +133,7 @@ const projectList = [
     name: "Drum Kit",
     icon: jslogo,
     tech: ["javascript", "html", "css"],
-    description: "Fun Drum kit can play with key strokes",
+    deiscription: "Fun Drum kit can play with key stroks",
     gitLink: "https://github.com/wolfy-six/DrumKit.git",
   },
 ];
@@ -194,6 +196,7 @@ const SkillList = [
       "Flutter is a UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It offers widgets for creating expressive and flexible user interfaces.",
     icon: flutter,
   },
+
   {
     id: 8,
     title: "Tailwind CSS",

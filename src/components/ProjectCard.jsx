@@ -15,7 +15,8 @@ const ProjectCard = ({ icon, name, description, gitLink, tech, invert }) => {
         <h1 className="md:text-xl capitalize">{name}</h1>
       </div>
       <p className="text-start">
-        {description.slice(0, 145) + " . . ."}
+        {/* {description.slice(0, 145) + " . . ."} */}
+        {description}
         <span>more</span>
       </p>
       <div className="my-2">
